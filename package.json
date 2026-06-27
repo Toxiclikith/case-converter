@@ -1,0 +1,112 @@
+{
+  "name": "case-converter",
+  "displayName": "Case Converter",
+  "description": "Convert selected text into different case formats.",
+  "version": "1.0.0",
+  "publisher": "toxiclikith",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:caseConverter.upper",
+    "onCommand:caseConverter.lower",
+    "onCommand:caseConverter.camel",
+    "onCommand:caseConverter.pascal",
+    "onCommand:caseConverter.snake",
+    "onCommand:caseConverter.kebab",
+    "onCommand:caseConverter.title",
+    "onCommand:caseConverter.sentence"
+  ],
+  "contributes": {
+    "submenus": [
+      {
+        "id": "caseConverter.menu",
+        "label": "Case Converter"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "caseConverter.menu",
+          "when": "editorHasSelection",
+          "group": "navigation"
+        }
+      ],
+      "caseConverter.menu": [
+        {
+          "command": "caseConverter.upper"
+        },
+        {
+          "command": "caseConverter.lower"
+        },
+        {
+          "command": "caseConverter.camel"
+        },
+        {
+          "command": "caseConverter.pascal"
+        },
+        {
+          "command": "caseConverter.snake"
+        },
+        {
+          "command": "caseConverter.kebab"
+        },
+        {
+          "command": "caseConverter.title"
+        },
+        {
+          "command": "caseConverter.sentence"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "caseConverter.upper",
+        "title": "UPPERCASE"
+      },
+      {
+        "command": "caseConverter.lower",
+        "title": "lowercase"
+      },
+      {
+        "command": "caseConverter.camel",
+        "title": "camelCase"
+      },
+      {
+        "command": "caseConverter.pascal",
+        "title": "PascalCase"
+      },
+      {
+        "command": "caseConverter.snake",
+        "title": "snake_case"
+      },
+      {
+        "command": "caseConverter.kebab",
+        "title": "kebab-case"
+      },
+      {
+        "command": "caseConverter.title",
+        "title": "Title Case"
+      },
+      {
+        "command": "caseConverter.sentence",
+        "title": "Sentence case"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/vscode": "^1.125.0",
+    "vscode": "^1.1.37"
+  }
+}
