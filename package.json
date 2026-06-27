@@ -5,6 +5,15 @@
   "version": "1.0.0",
   "publisher": "toxiclikith",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toxiclikith/case-converter"
+  },
+  "homepage": "https://github.com/toxiclikith/case-converter",
+  "bugs": {
+    "url": "https://github.com/toxiclikith/case-converter/issues"
+  },
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
