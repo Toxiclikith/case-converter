@@ -1,8 +1,8 @@
 {
-  "name": "case-converter",
-  "displayName": "Case Converter",
-  "description": "Convert selected text into different case formats.",
-  "version": "1.0.0",
+  "name": "case-shift",
+  "displayName": "Case Shift",
+  "description": "Instantly convert selected text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, Title Case, and Sentence case.",
+  "version": "1.0.1",
   "publisher": "toxiclikith",
   "license": "MIT",
   "repository": {
@@ -35,7 +35,7 @@
     "submenus": [
       {
         "id": "caseConverter.menu",
-        "label": "Case Converter"
+        "label": "Case Shift"
       }
     ],
     "menus": {
